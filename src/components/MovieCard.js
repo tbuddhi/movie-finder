@@ -10,7 +10,7 @@ export const MovieCard = ({ movie }) => {
     const getDetails = async () => {
 
         const imdbID = movie.imdbID;
-        const API_URL = `http://www.omdbapi.com/?i=${imdbID}&apikey=4659a8fd`;
+        const API_URL = `https://www.omdbapi.com/?i=${imdbID}&apikey=4659a8fd`;
 
         try {
             const response = await fetch(API_URL);

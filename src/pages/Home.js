@@ -11,7 +11,7 @@ const Home = () => {
     const findMovie = async () => {
 
         const API_KEY = '4659a8fd'; // Activated OMDB API key 
-        const API_URL = `http://www.omdbapi.com/?s=${searchInput}&apikey=${API_KEY}`; // set search word and api-key to api url 
+        const API_URL = `https://www.omdbapi.com/?s=${searchInput}&apikey=${API_KEY}`; // set search word and api-key to api url 
 
         try {
             const res = await fetch(API_URL); // fetch movies from omdb
