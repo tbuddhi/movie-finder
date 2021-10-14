@@ -1,0 +1,31 @@
+@import './variables';
+@import './mixins';
+@import './colors';
+@import './Header';
+@import './Layout';
+@import './Home';
+@import './MovieCard';
+@import './MovieList';
+@import './SearchWidget';
+@import './Pagination';
+
+
+body{
+    background-color: $body-bg;
+}
+
+button{
+    padding: 7px 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: $btn-primary-bg;
+    color: $white;
+    border: 0;
+    border-radius: 3px;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover{
+        background: $btn-primary-hover;
+    }
+}

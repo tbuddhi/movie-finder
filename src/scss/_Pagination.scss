@@ -1,0 +1,30 @@
+.pagination{
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+
+    &__item{
+        display: flex;
+    	margin-right: 2px;
+    }
+
+    &__link{
+        padding: .75rem 1.5rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: $blue;
+        background-color: $white;
+        border: 2px solid $pagin-border;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover{
+            transition: all .3s;            
+            background-color: $btn-primary-hover;
+            color: $white;
+        }
+        
+    }
+    
+}

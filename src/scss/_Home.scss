@@ -1,0 +1,13 @@
+.main-content{
+    padding: 3rem 0;
+}
+
+.alert-warning{
+    @include alert-varient($red, $warning-bg);
+    font-size: 1.1em;
+}
+
+.alert-welcome{
+    @include alert-varient($welcome-title, $welcome-bg);
+    font-size: 1.4em;
+}

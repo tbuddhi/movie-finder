@@ -1,0 +1,63 @@
+@import './scss/web-theme.scss';
+
+// new custom classes
+.d-inline-flex{
+    display: inline-flex !important;
+}
+
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 576px){
+        max-width: 540px;
+    }
+    @media (min-width: 768px){
+        max-width: 720px;
+    }
+    @media (min-width: 992px){
+        max-width: 960px;
+    }
+    @media (min-width: 1400px){
+        max-width: 1320px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+
+    > *{
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.col {
+    flex: 1 0;
+}
+
+.col-50 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col-md-50 {
+    @media (min-width: 768px){
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+.w-100{
+    width: 100% !important;
+}
+
+.d-none{
+    display: none !important;
+}

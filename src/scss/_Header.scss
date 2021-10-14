@@ -1,0 +1,32 @@
+.header{
+    height: $header-height;
+    border-bottom: 1px solid $border-gray;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .14);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    background: white;
+
+    &__wrapper{
+        height: 100%;
+        display: flex;
+    }
+
+    &__searchBar{
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            font-size: 1.7em;
+            color: $header-title;
+        }
+    }
+
+    @media (max-width: 768px){
+        height: auto;
+        padding: 1rem .5rem;
+    }
+}

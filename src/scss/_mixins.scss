@@ -1,0 +1,17 @@
+@mixin alert-varient($txt-color, $bg-color) {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    font-weight: 500;
+    border: 2px dashed;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    background-color: $bg-color;
+    color: $txt-color;
+
+    @media (max-width: 768px){
+        width: 90%;
+    }
+}
