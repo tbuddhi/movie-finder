@@ -13,7 +13,7 @@ export const Pagination = ({ moviesPerPage, totalMovies, paginate }) => {
                 <ul className="pagination">
                     {pageNumbers.map(number => (
                         <li key={number} className="pagination__item">
-                            <a onClick={() => paginate(number)} className="pagination__link">{number}</a>
+                            <button onClick={() => paginate(number)} className="pagination__link">{number}</button>
                         </li>
                     ))}
                 </ul>
