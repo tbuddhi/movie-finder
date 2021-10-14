@@ -10,16 +10,16 @@ const Home = () => {
 
     const findMovie = async () => {
 
-        const API_KEY = '4659a8fd';
-        const API_URL = `http://www.omdbapi.com/?s=${searchInput}&apikey=${API_KEY}`;
+        const API_KEY = '4659a8fd'; // Activated OMDB API key 
+        const API_URL = `http://www.omdbapi.com/?s=${searchInput}&apikey=${API_KEY}`; // set search word and api-key to api url 
 
         try {
-            const res = await fetch(API_URL);
-            const jsonData = await res.json();
+            const res = await fetch(API_URL); // fetch movies from omdb
+            const jsonData = await res.json(); // convert response data to json
 
-            setMovies(jsonData.Search);
-            setWelcome(false);
-            setAlert(true)
+            setMovies(jsonData.Search); // set response search data to movies array
+            setWelcome(false); // hide welcome note when load data
+            setAlert(true) // show alert msg when unmatched keyword search
 
         } catch (err) {
             console.error(err);
