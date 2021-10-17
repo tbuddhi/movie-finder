@@ -12,3 +12,15 @@
         transition: all .3s;
     }
 }
+
+.input-wrapper{
+    
+    @media (max-width: 768px){
+        display: flex;
+        width: 100%;
+
+        .search-input{
+            width: 55%;
+        }
+    }
+}
